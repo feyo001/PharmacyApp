@@ -31,7 +31,7 @@ class DatabaseManager:
             return None
 
             
-    def execute_query(self, query:str, params: tuple=None):
+    def execute_query(self, query:str, params:tuple=None):
         try:
             with self.conn.cursor() as cursor:
                 if params:
